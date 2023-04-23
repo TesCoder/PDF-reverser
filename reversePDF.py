@@ -20,7 +20,6 @@ def merge_pdfs(paths, output):
         totalPages = len(pdf_reader.pages)-1
         page = totalPages
         while page >= 0:
-            # print(page)
             pdf_writer.add_page(pdf_reader.pages[page])
             page-=1
 
